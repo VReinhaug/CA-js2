@@ -1,0 +1,15 @@
+footer {
+  background-color: map-get($colours, secondary);
+}
+
+nav a,
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer img,
+nav img {
+  height: 27px;
+  width: 27px;
+}

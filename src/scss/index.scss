@@ -1,0 +1,43 @@
+@import "variables";
+@import "layout";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+body {
+    background-color: map-get($colours, primary);
+    color: map-get($colours, text);
+    padding-bottom: 100px;
+}
+
+.btn {
+    background-color: map-get($colours, secondary);
+    border-color: map-get($colours, third);
+    color: map-get($colours, text);
+}
+
+.btn:hover {
+    background-color: map-get($colours, third);
+    border-color: map-get($colours, secondary);
+}
+
+.card{
+    max-width: 20rem;
+}
+
+.card-one{
+    background-color: map-get($colours, third);
+    color: #fff;
+}
+
+.card-two{
+    background-color: map-get($colours, secondary);
+    color: #000;
+}
+
+.card-header img {
+    width: 40px; 
+    height: 40px;
+}
+
+.card-body img {
+    max-width: 18rem;
+}

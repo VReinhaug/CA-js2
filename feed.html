@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feed | Dogfriend</title>
+    <meta
+      name="description"
+      content="Keep up with your dogfriends and share your adventures."
+    />
+    <link rel="stylesheet" href="/dist/css/index.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/84a2433f18.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent m-2">
+        <div class="container-fluid">
+          <div class="d-flex align-items-center">
+            <a class="navbar-brand" href="#">
+              <img
+                src="/img/logo_dogfriend_300x300.png"
+                alt="Logo"
+                width="40"
+                height="40"
+                class="d-inline-block align-text-top"
+              />
+            </a>
+            <span class="navbar-brand mb-0 h1">Dogfriend</span>
+          </div>
+          <section class="ms-auto d-none d-lg-flex align-items-center">
+            <div class="text-center me-5">
+              <a href="/feed.html">
+                <i class="fa-solid fa-house fa-xl"></i>
+                <p class="mb-0"><small>Feed</small></p>
+              </a>
+            </div>
+            <div class="text-center me-5">
+              <a href="/profile.html">
+                <img
+                  src="/img/ziko-profile_300x300.jpeg"
+                  alt="Profile picture Ziko"
+                  class="rounded-circle"
+                />
+                <p class="mb-0"><small>Profile</small></p>
+              </a>
+            </div>
+            <form class="d-flex me-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-secondary" type="submit">
+                <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+              </button>
+            </form>
+          </section>
+        </div>
+        <div class="d-lg-none mt-2 px-3">
+          <form class="d-flex justify-content-center" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-secondary" type="submit">
+              <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+            </button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <main class="container text-center">
+      <section>
+        <h1>Feed</h1>
+        <form>
+          <div class="form-group m-3">
+            <label for="message" class="lead">Wassup Dawg?</label>
+            <textarea
+              class="form-control"
+              id="message"
+              placeholder="..."
+              rows="3"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <input
+              type="file"
+              class="form-control-file"
+              id="file"
+              accept="image/jpeg, video/mp4"
+            />
+          </div>
+        </form>
+        <button class="btn btn-outline-secondary m-2" type="submit">
+          Leave a paw print
+        </button>
+      </section>
+      <section class="m-3">
+        <button>Posts</button>
+        <button>Photos</button>
+      </section>
+      <section class="container text-center">
+        <div class="card card-one m-3 mx-auto">
+          <div class="card-header d-flex align-items-center">
+            <img
+              src="/img/charlie-profile_300x300.jpg"
+              alt="Profile picture Charlie"
+              class="rounded-circle me-2"
+            />
+            <span>Charlie</span>
+          </div>
+          <div class="card-body align-self-center">
+            <img src="/img/charlie-walk_300x300.jpg" alt="Charlie walking" />
+            <p class="card-text">
+              I just had the best day ever, walking up this huuuuge mountain!
+            </p>
+          </div>
+        </div>
+        <div class="card card-two m-3 mx-auto">
+          <div class="card-header d-flex align-items-center">
+            <img
+              src="/img/leo-profile_300x300.jpeg"
+              alt="Profile picture Leo"
+              class="rounded-circle me-2"
+            />
+            <span>Leo</span>
+          </div>
+          <div class="card-body align-self-center">
+            <p class="card-text">Anyone wants to join me for a walk today?</p>
+          </div>
+        </div>
+        <div class="card card-one m-3 mx-auto">
+          <div class="card-header d-flex align-items-center">
+            <img
+              src="/img/only-profile_300x300.jpeg"
+              alt="Profile picture Only"
+              class="rounded-circle me-2"
+            />
+            <span>Only</span>
+          </div>
+          <div class="card-body align-self-center">
+            <img src="/img/only-christmas_300x300.jpeg" alt="Charlie walking" />
+            <p class="card-text">
+              It's Only three months until Christmas guys!!!
+            </p>
+          </div>
+        </div>
+        <div class="card card-two m-3 mx-auto">
+          <div class="card-header d-flex align-items-center">
+            <img
+              src="/img/arthur-profile_300x300.jpeg"
+              alt="Profile picture Arthur"
+              class="rounded-circle me-2"
+            />
+            <span>Arthur</span>
+          </div>
+          <div class="card-body align-self-center">
+            <p class="card-text">
+              Does anyone have a good tip for snacks?? I don't sit for sausages
+              anymore..
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="fixed-bottom d-flex justify-content-around align-items-center p-1 d-lg-none"
+    >
+      <div class="text-center">
+        <a href="/feed.html">
+          <i class="fa-solid fa-house fa-xl"></i>
+          <p class="mb-0"><small>Feed</small></p>
+        </a>
+      </div>
+      <div class="text-center">
+        <a href="/profile.html">
+          <img
+            src="/img/ziko-profile_300x300.jpeg"
+            alt="Profile picture Ziko"
+            class="rounded-circle"
+          />
+          <p class="mb-0"><small>Profile</small></p>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
