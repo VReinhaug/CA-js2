@@ -1,5 +1,6 @@
 import { createPost } from "./api/post/createPost.js";
 import { deletePost } from "./api/post/deletePost.js";
+import { handleFilterChange } from "./api/post/filterPost.js";
 import { getPosts } from "./api/post/get.js";
 import { renderPosts } from "./api/post/render.js";
 import { getProfiles } from "./api/profile/getprofile.js";
@@ -54,6 +55,14 @@ document.addEventListener("click", async (event) => {
     }
   }
 });
+
+// Add event listeners for checkboxes to handle filtering
+document
+  .querySelector("#filter-posts")
+  .addEventListener("change", handleFilterChange);
+document
+  .querySelector("#filter-photos")
+  .addEventListener("change", handleFilterChange);
 
 // Call fetchAndRenderPosts when the page is loaded
 document.addEventListener("DOMContentLoaded", fetchAndRenderPosts);

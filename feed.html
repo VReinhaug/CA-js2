@@ -137,9 +137,25 @@
           </button>
         </form>
       </section>
-      <section class="m-3">
-        <button>Posts</button>
-        <button>Photos</button>
+      <section class="m-3 text-center">
+        <label class="form-check-inline">
+          <input
+            type="checkbox"
+            id="filter-posts"
+            class="form-check-input"
+            data-filter="posts"
+          />
+          Posts
+        </label>
+        <label class="form-check-inline">
+          <input
+            type="checkbox"
+            id="filter-photos"
+            class="form-check-input"
+            data-filter="photos"
+          />
+          Photos
+        </label>
       </section>
       <section id="feed-container"></section>
       <div class="modal" id="delete-modal" tabindex="-1" role="dialog">
