@@ -1,4 +1,4 @@
-import { API_BASE_URL, API_POSTS } from "../constants.js";
+import { API_BASE_URL, API_POSTS, API_POST_WITH_AUTHOR } from "../constants.js";
 import { authFetch } from "../fetch.js";
 
 /**
@@ -7,7 +7,9 @@ import { authFetch } from "../fetch.js";
  */
 export async function getPosts() {
   try {
-    const response = await authFetch(API_BASE_URL + API_POSTS);
+    const response = await authFetch(
+      API_BASE_URL + API_POSTS + API_POST_WITH_AUTHOR
+    );
     const data = await response.json();
     console.log("Posts fetched:", data);
     return data.data || []; // Make sure you're returning the `data` array

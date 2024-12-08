@@ -32,6 +32,11 @@ export function renderPosts(posts) {
     const postBody = document.createElement("div");
     postBody.classList.add("card-body");
 
+    // Post title
+    const postTitle = document.createElement("h5");
+    postTitle.textContent = post.title || "Untitled Post";
+    postBody.appendChild(postTitle);
+
     // Render media if available
     if (post.media && post.media.url) {
       const postImage = document.createElement("img");
@@ -40,6 +45,7 @@ export function renderPosts(posts) {
       postBody.appendChild(postImage);
     }
 
+    // Post text
     const postText = document.createElement("p");
     postText.textContent = post.body || "No content available";
     postBody.appendChild(postText);
