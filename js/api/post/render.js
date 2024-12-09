@@ -9,6 +9,8 @@ export function renderPosts(posts) {
   const postContainer = document.querySelector("#feed-container");
   postContainer.innerHTML = ""; // Clear previous content before rendering new posts
 
+  console.log("Rendering posts:", posts); // Log the posts being rendered
+
   posts.forEach((post) => {
     const postCard = document.createElement("div");
     postCard.classList.add("card", "card-one", "m-3", "mx-auto");

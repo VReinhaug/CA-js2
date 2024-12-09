@@ -7,3 +7,4 @@ export const API_LOGIN = "/login";
 export const API_POSTS = "/social/posts";
 export const API_POST_WITH_AUTHOR = "?_author=true";
 export const API_PROFILES = "/social/profiles";
+export const API_SEARCH_POSTS = "/search?q=";
