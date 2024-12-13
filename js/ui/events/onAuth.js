@@ -25,8 +25,8 @@ export async function onAuth(event) {
       await login(email, password);
     }
 
-    // Redirect to feed after successful login or registration
-    window.location.href = "/feed.html";
+    // Redirect to profile after successful login or registration
+    window.location.href = "/profile.html";
   } catch (error) {
     alert(error.message); // Show an error message if the login or registration fails
   }

@@ -1,4 +1,5 @@
 import { fetchAndRenderPosts } from "../../feed.js";
+import { deletePost } from "./deletePost.js";
 import { updatePost } from "./updatePost.js";
 
 /**
