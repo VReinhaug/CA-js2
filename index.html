@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log your dog | Dogfriend</title>
+    <meta
+      name="description"
+      content="Log in or create a profile for the social media platform Dogfriend"
+    />
+    <link rel="stylesheet" href="/dist/css/index.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent m-2">
+        <div class="container-fluid">
+          <div class="d-flex align-items-center">
+            <a class="navbar-brand" href="#">
+              <img
+                src="/img/logo_dogfriend_300x300.png"
+                alt="Logo"
+                width="40"
+                height="40"
+                class="d-inline-block align-text-top"
+              />
+            </a>
+            <span class="navbar-brand mb-0 h1">Dogfriend</span>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container text-center">
+      <section>
+        <h1 class="mb-5">Log your dog</h1>
+        <div id="auth-container" class="row col-10 col-md-5 m-auto card p-3">
+          <h2 id="authTitle" class="text-center">Login</h2>
+          <form name="auth" id="authForm">
+            <div class="mb-3" id="nameField" style="display: none">
+              <label for="authName" class="form-label">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="authName"
+                name="name"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="authEmail" class="form-label">E-mail address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="authEmail"
+                name="email"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="authPassword" class="form-label">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="authPassword"
+                name="password"
+                minlength="8"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary" data-auth="login">
+              Log in
+            </button>
+          </form>
+          <a href="#" id="toggleAuthMode"
+            >Don't have an account? Register here</a
+          >
+        </div>
+      </section>
+    </main>
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>
