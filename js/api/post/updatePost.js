@@ -38,7 +38,6 @@ export async function updatePost(post) {
     }
 
     const updatedPost = await response.json();
-    console.log("Post updated successfully:", updatedPost);
     return updatedPost;
   } catch (error) {
     console.error("Error updating post:", error);

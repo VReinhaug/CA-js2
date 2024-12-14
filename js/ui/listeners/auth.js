@@ -4,7 +4,7 @@ export function setAuthListener() {
   // Get references to relevant elements
   const form = document.forms.auth; // The auth form
   const title = document.getElementById("authTitle"); // Title of the form
-  const nameField = document.getElementById("nameField"); // Name field (hidden by default)
+  const nameField = document.getElementById("nameField"); // Name field
   const toggleLink = document.getElementById("toggleAuthMode"); // Link to toggle modes
   const submitButton = form.querySelector("button[type='submit']"); // The form's submit button
 

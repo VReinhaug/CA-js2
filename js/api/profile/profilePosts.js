@@ -12,7 +12,6 @@ export async function fetchProfilePosts(username) {
       `${API_BASE_URL}${API_PROFILES}/${username}/posts?_author=true`
     );
     const data = await response.json();
-    console.log("Profile posts fetched:", data);
     return data.data || [];
   } catch (error) {
     console.error("Failed to fetch profile posts:", error);

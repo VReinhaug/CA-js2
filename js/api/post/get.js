@@ -11,7 +11,6 @@ export async function getPosts() {
       API_BASE_URL + API_POSTS + API_POST_WITH_AUTHOR
     );
     const data = await response.json();
-    console.log("Posts fetched:", data);
     return data.data || []; // Make sure you're returning the `data` array
   } catch (error) {
     console.error("Failed to fetch posts:", error);

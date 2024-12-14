@@ -12,7 +12,6 @@ export async function fetchProfileInfo(username) {
       `${API_BASE_URL}${API_PROFILES}/${username}`
     );
     const data = await response.json();
-    console.log("Profile info fetched:", data);
     return data.data;
   } catch (error) {
     console.error("Failed to fetch profile info:", error);

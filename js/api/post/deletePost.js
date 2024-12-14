@@ -14,8 +14,6 @@ export async function deletePost(postId) {
     if (!response.ok) {
       throw new Error("Failed to delete post");
     }
-
-    console.log("Post deleted successfully");
   } catch (error) {
     console.error("Error deleting post:", error);
   }

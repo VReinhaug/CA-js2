@@ -8,9 +8,7 @@ import { updatePost } from "./updatePost.js";
  */
 export function renderPosts(posts) {
   const postContainer = document.querySelector("#feed-container");
-  postContainer.innerHTML = ""; // Clear previous content before rendering new posts
-
-  console.log("Rendering posts:", posts); // Log the posts being rendered
+  postContainer.innerHTML = "";
 
   posts.forEach((post) => {
     const postCard = document.createElement("div");
@@ -47,7 +45,7 @@ export function renderPosts(posts) {
     editIcon.addEventListener("click", () => {
       // Replace post content with edit form
       const editForm = createEditForm(post);
-      postCard.innerHTML = ""; // Clear post card content
+      postCard.innerHTML = "";
       postCard.appendChild(editForm);
     });
 

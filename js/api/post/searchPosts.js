@@ -18,10 +18,9 @@ export async function searchPosts(query) {
     }
 
     const data = await response.json();
-    console.log("API Response for search with author:", data);
 
     const posts = Array.isArray(data) ? data : data.data || [];
-    renderPosts(posts); // Render the posts, author data should now be included
+    renderPosts(posts); // Render the posts, author data included
   } catch (error) {
     console.error("Error during search:", error);
   }
